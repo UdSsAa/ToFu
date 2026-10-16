@@ -1,0 +1,44 @@
+# ==========================================
+# ToFu (xray-box) - Git Ignore Rules
+# ==========================================
+
+# --- 1. 敏感信息与私密凭据 (严禁泄露至公网) ---
+*.env
+node_info.env
+nodes.txt
+*.key
+*.pem
+*.crt
+*.cer
+*.uuid
+
+# --- 2. 服务器动态生成配置与运行数据 ---
+config.json
+client_config.json
+*.log
+*.pid
+
+# --- 3. 预编译二进制与规则数据库 (由脚本动态拉取) ---
+xray
+xray.exe
+geoip.dat
+geosite.dat
+*.dll
+*.so
+
+# --- 4. 本地临时文件、个人笔记与废弃旧版本脚本 ---
+*.tmp
+*.bak
+*.swp
+*~
+*.txt
+xray-box.sh
+
+# --- 5. 操作系统缓存与开发工具环境 ---
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
